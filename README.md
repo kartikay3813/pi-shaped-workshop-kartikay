@@ -21,7 +21,9 @@ Node replies with data (like JSON).
 React shows that data on UI.
 This is the request-response cycle:
 React → API Call → Node.js → Response → React updates UI
-✅ 2. Difference between REST APIs and WebSockets
+
+
+2. Difference between REST APIs and WebSockets
 Feature	REST API	WebSocket
 Connection	One-time per request	Continuous connection
 Direction	Client requests, server replies	Both sides can send data anytime
@@ -29,7 +31,9 @@ Use case	Normal apps (CRUD, forms, login)	Real-time apps (chat, notifications, g
 When to use:
 REST API → If you only need request and response (e.g., login, data fetch).
 WebSocket → If you need live updates (e.g., chat, stock prices).
-✅ 3. What is the role of the event loop in Node.js?
+
+
+3. What is the role of the event loop in Node.js?
 The event loop helps Node.js handle many tasks at once without blocking the system.
 Example:
 When Node.js gets a heavy or async task (like DB call, file read),
@@ -37,7 +41,9 @@ It gives it to a worker thread,
 Meanwhile, Node continues other work,
 When the result is ready, the event loop picks it up.
 That's why Node.js is fast and non-blocking.
-✅ 4. How did you handle async calls or state updates in React?
+
+
+4. How did you handle async calls or state updates in React?
 I used:
 useState → to store data.
 useEffect → to call APIs or update UI.
@@ -52,7 +58,8 @@ useEffect(() => {
   }
   getNotes();
 }, []);
-✅ 5. What can be improved to make this app production-ready?
+
+5. What can be improved to make this app production-ready?
 Some improvements:
 Database – Right now data is in memory, but in production we should use MongoDB, MySQL, etc.
 Authentication – Add login/sign-up so only allowed users can access.
