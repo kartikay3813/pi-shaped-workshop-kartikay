@@ -1,0 +1,48 @@
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 40px;
+}
+ 
+.note-input {
+  margin-bottom: 20px;
+}
+ 
+.note-input input {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+ 
+.note-input button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
+.note-list {
+  list-style: none;
+  padding: 0;
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+ 
+.note-list li {
+  background: #f9f9f9;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.error {
+  color: red;
+}
